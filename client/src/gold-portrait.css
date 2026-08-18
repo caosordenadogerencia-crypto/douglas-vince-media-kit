@@ -1,0 +1,26 @@
+/* Revisão: dourado queimado como assinatura e retrato transparente em composição de camadas. */
+:root { --gold: #d0aa67 !important; --acid: #d0aa67 !important; --cyan: #af7e3e !important; }
+.hero-field { opacity: .16 !important; filter: sepia(.7) saturate(.55) contrast(1.25) !important; }
+.hero-shade { background: radial-gradient(ellipse at 61% 38%, rgba(208,170,103,.18), transparent 31%), radial-gradient(ellipse at 50% 40%, transparent 18%, rgba(0,0,0,.42) 57%, #020202 94%) !important; }
+.hero-halo { position: absolute; z-index: 1; left: 57%; top: 49%; width: min(510px, 48vw); aspect-ratio: 1; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle, rgba(208,170,103,.27) 0 3%, rgba(208,170,103,.09) 23%, transparent 62%); box-shadow: 0 0 0 1px rgba(208,170,103,.18), 0 0 95px rgba(208,170,103,.13); }
+.hero-person { z-index: 3 !important; left: 57% !important; bottom: 53px !important; transform: translateX(-50%) !important; width: min(550px, 46vw) !important; height: calc(100% - 126px) !important; object-fit: contain !important; object-position: center bottom !important; mask-image: none !important; filter: contrast(1.08) saturate(.88) drop-shadow(0 22px 36px rgba(0,0,0,.74)) !important; }
+.hero-person.hero-horse { left: 55% !important; width: min(570px, 49vw) !important; height: calc(100% - 112px) !important; object-fit: cover !important; object-position: center center !important; filter: contrast(1.1) saturate(.85) drop-shadow(0 24px 44px rgba(0,0,0,.85)) !important; mix-blend-mode: screen; }
+.hero-cutout { z-index: 2 !important; border-color: var(--gold) !important; }
+.hero-title-wrap { z-index: 5 !important; }
+.hero-title-wrap h1 span { color: rgba(208,170,103,.08) !important; text-shadow: 0 0 0 var(--gold), 1px 1px 0 var(--gold), -1px -1px 0 var(--gold) !important; }
+.hero-title-wrap > p, .hero-rule b { color: #e2cc9c !important; }
+.hero-actions a:first-child { color: var(--gold) !important; border-color: var(--gold) !important; }
+.profile-image .cyan-card { background: var(--gold) !important; }
+.profile-tags span:first-child { border-color: var(--gold) !important; color: var(--gold) !important; }
+.profile-themes { margin-top: 22px; padding-top: 14px; border-top: 1px solid rgba(242,241,237,.18); display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.profile-themes b { width: 100%; margin-bottom: 3px; color: var(--gold); font-size: 7px; letter-spacing: .12em; }
+.profile-themes span { color: #c9c7c0; font-size: 7px; font-weight: 800; letter-spacing: .06em; border: 1px solid rgba(242,241,237,.18); padding: 6px 7px; }
+.case-strip .cyan-case { background: var(--gold) !important; border-color: var(--gold) !important; }
+.chart-fill { fill: rgba(208,170,103,.14) !important; }
+.chart-line { stroke: var(--gold) !important; }
+.hero-rule i, .deck-label i { background: var(--gold) !important; }
+.panel-nav a:first-child, .panel-nav a:hover, .hud-top span:first-child, .hud-top i, .hud-metric i, .closing-panel > a { color: var(--gold) !important; }
+.hud-top i { background: var(--gold) !important; }.hud-source strong { background: var(--gold) !important; }.hud-source b { background: #6f552b !important; }.audience-card span svg { color: var(--gold) !important; }
+@media (max-width:800px) { .hero-halo { left:55%; width: min(430px,88vw); top:47%; }.hero-person { left:55% !important; width: min(460px,78vw) !important; height: calc(100% - 104px) !important; bottom:44px !important; } }
+@media (max-width:800px) { .hero-person.hero-horse { left:53% !important; width:88vw !important; height:calc(100% - 88px) !important; } }
+@media (max-width:480px) { .hero-halo { left:53%; top:47%; width:83vw; }.hero-person { left:53% !important; width:83vw !important; height: calc(100% - 98px) !important; bottom:42px !important; }.hero-title-wrap { top:39% !important; } }
