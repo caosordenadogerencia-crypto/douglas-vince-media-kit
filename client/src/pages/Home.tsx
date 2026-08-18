@@ -6,20 +6,20 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowUpRight, Camera, ChevronRight, Cpu, Instagram, ScanLine, Sparkles } from "lucide-react";
 
 const assets = {
-  logo: "/assets/portrait-hunter-logo-final.png",
-  signal: "/assets/dv-hero-signal.png",
-  metrics: "/assets/dv-metrics-field.png",
-  equipment: "/assets/dv-equipment-light.png",
-  audience: "/assets/dv-audience-spectrum.png",
-  studio: "/assets/douglas-studio.webp",
-  heroCutout: "/assets/douglas-hero-alpha.png",
-  heroHorse: "/assets/hero-horse-sunglasses.png",
-  camera: "/assets/douglas-camera.jpg",
-  portrait: "/assets/douglas-bw-portrait.png",
-  ember: "/assets/portrait-ember-front.jpg",
-  blue: "/assets/portrait-blue-orange-wide.jpg",
-  insightA: "/assets/instagram-insights-overview.jpeg",
-  insightB: "/assets/instagram-insights-audience.jpeg",
+  logo: "./assets/portrait-hunter-logo-final.png",
+  signal: "./assets/dv-hero-signal.png",
+  metrics: "./assets/dv-metrics-field.png",
+  equipment: "./assets/dv-equipment-light.png",
+  audience: "./assets/dv-audience-spectrum.png",
+  studio: "./assets/douglas-studio.webp",
+  heroCutout: "./assets/douglas-hero-alpha.png",
+  heroHorse: "./assets/hero-horse-sunglasses.png",
+  camera: "./assets/douglas-camera.jpg",
+  portrait: "./assets/douglas-bw-portrait.png",
+  ember: "./assets/portrait-ember-front.jpg",
+  blue: "./assets/portrait-blue-orange-wide.jpg",
+  insightA: "./assets/instagram-insights-overview.jpeg",
+  insightB: "./assets/instagram-insights-audience.jpeg",
 };
 
 function useCounter(target: number) {
