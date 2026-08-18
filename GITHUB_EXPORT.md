@@ -8,4 +8,6 @@ Essa estrutura evita dependência de URLs temporárias e impede erros comuns de 
 
 O comando `pnpm build:static` remove qualquer saída anterior e cria apenas `dist/public`; ele não executa nem inclui `server/index.ts` no pacote final. A branch `gh-pages` deste repositório já contém essa versão estática, com todas as imagens locais.
 
+O arquivo `vercel.json` aplica o mesmo comportamento na Vercel: executa `pnpm build:static` e define `dist/public` como diretório de publicação. Isso impede que o bundle `dist/index.js` do servidor seja servido como conteúdo da página.
+
 Para ativar a página, abra **Settings → Pages**, selecione **Deploy from a branch**, escolha a branch **gh-pages** e a pasta **/(root)**, depois clique em **Save**. Esse fluxo serve somente HTML, CSS, JavaScript e imagens e é compatível com GitHub Pages.
